@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -19,6 +19,10 @@
             font-family: 'Roboto', sans-serif;
             text-rendering: geometricPrecision;
             /* -webkit-font-smoothing: antialiased; */
+        }
+
+        .container-fluid {
+            padding-bottom: 3.6rem;
         }
 
         .cal {
@@ -41,8 +45,10 @@
         .mdl-button--fab {
             -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
             box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
-            /* color: white;
-            background: linear-gradient(to right, rgb(33, 166, 252) 0%, rgb(35, 207, 252) 100%); */
+        }
+
+        .mdl-button--fab.mdl-button--colored {
+            background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
         }
 
         /* .mdl-button--fab:hover {
@@ -68,11 +74,12 @@
         }
 
         span.marked {
-            background-color: #4885ed;
+            /* background-color: #4885ed; */
+            background-color: #ffa296;
             color: white;
         }
 
-        span.today { font-weight: 800; }
+        span.today { font-weight: 900; }
 
         table td { height: 46px; }
 
@@ -107,6 +114,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: -webkit-sticky;
             position: sticky;
             top: 0;
             background-color: white;
@@ -434,7 +442,7 @@
                                         <span>15</span>
                                     </td>
                                     <td>
-                                        <span class="marked today">16</span>
+                                        <span class="marked">16</span>
                                     </td>
                                     <td>
                                         <span class="today">17</span>
@@ -1052,22 +1060,278 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
+                <div class="cal">
+                    <div class="header">
+                        <span>July</span>
+                    </div>
+                    <div class="body">
+                        <table>
+                            <tbody>
+                                <tr class="weekdays">
+                                    <td>S</td>
+                                    <td>M</td>
+                                    <td>T</td>
+                                    <td>W</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>S</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                    <td class="marked">
+                                        <span>3</span>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td class="marked">
+                                        <span>5</span>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                    <td>
+                                        <span>9</span>
+                                    </td>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                    <td>
+                                        <span>11</span>
+                                    </td>
+                                    <td>
+                                        <span>12</span>
+                                    </td>
+                                    <td>
+                                        <span>13</span>
+                                    </td>
+                                    <td>
+                                        <span>14</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>15</span>
+                                    </td>
+                                    <td class="marked">
+                                        <span>16</span>
+                                    </td>
+                                    <td>
+                                        <span>17</span>
+                                    </td>
+                                    <td>
+                                        <span>18</span>
+                                    </td>
+                                    <td>
+                                        <span>19</span>
+                                    </td>
+                                    <td>
+                                        <span>20</span>
+                                    </td>
+                                    <td>
+                                        <span>21</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>22</span>
+                                    </td>
+                                    <td>
+                                        <span>23</span>
+                                    </td>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>25</span>
+                                    </td>
+                                    <td>
+                                        <span>26</span>
+                                    </td>
+                                    <td>
+                                        <span>27</span>
+                                    </td>
+                                    <td>
+                                        <span>28</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>29</span>
+                                    </td>
+                                    <td>
+                                        <span>30</span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="cal"></div>
+                <div class="cal">
+                    <div class="header">
+                        <span>August</span>
+                    </div>
+                    <div class="body">
+                        <table>
+                            <tbody>
+                                <tr class="weekdays">
+                                    <td>S</td>
+                                    <td>M</td>
+                                    <td>T</td>
+                                    <td>W</td>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>S</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td class="marked">
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span></span>
+                                    </td>
+                                    <td class="marked">
+                                        <span></span>
+                                    </td>
+                                    <td>
+                                        <span>1</span>
+                                    </td>
+                                    <td>
+                                        <span>2</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>3</span>
+                                    </td>
+                                    <td>
+                                        <span>4</span>
+                                    </td>
+                                    <td>
+                                        <span>5</span>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                    <td>
+                                        <span>8</span>
+                                    </td>
+                                    <td>
+                                        <span>9</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>10</span>
+                                    </td>
+                                    <td class="marked">
+                                        <span>11</span>
+                                    </td>
+                                    <td>
+                                        <span>12</span>
+                                    </td>
+                                    <td>
+                                        <span>13</span>
+                                    </td>
+                                    <td>
+                                        <span>14</span>
+                                    </td>
+                                    <td>
+                                        <span>15</span>
+                                    </td>
+                                    <td>
+                                        <span>16</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>17</span>
+                                    </td>
+                                    <td>
+                                        <span>18</span>
+                                    </td>
+                                    <td>
+                                        <span>19</span>
+                                    </td>
+                                    <td>
+                                        <span>20</span>
+                                    </td>
+                                    <td>
+                                        <span>21</span>
+                                    </td>
+                                    <td>
+                                        <span>22</span>
+                                    </td>
+                                    <td>
+                                        <span>23</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>24</span>
+                                    </td>
+                                    <td>
+                                        <span>25</span>
+                                    </td>
+                                    <td>
+                                        <span>26</span>
+                                    </td>
+                                    <td>
+                                        <span>27</span>
+                                    </td>
+                                    <td>
+                                        <span>28</span>
+                                    </td>
+                                    <td>
+                                        <span>29</span>
+                                    </td>
+                                    <td>
+                                        <span>30</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
         
